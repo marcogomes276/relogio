@@ -1,6 +1,8 @@
 <template>
 	<div id="Clockapplication">
-    	<h1 class="h-digital">{{aTime}}</h1>;
+		<img class="chapeu" src="../assets/chapeu.png">
+    	<h1 class="h-digital">{{aTime}}</h1>
+    	<p class="restriçao">(Esse relogio foi feito por um aluno do VainaWeb chamado Marco Gomez)</p>
 	</div>
 </template>
 <script>
@@ -39,9 +41,17 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 	}
 	#Clockapplication:hover{
 		background-image: url(../assets/fundo.jpg);
+	}
+	.chapeu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 11em;
+		height: 10em;
 	}
 	.h-digital{
 		background: white;
@@ -58,5 +68,30 @@
 		border-color: red;
 		background-color: black;
 		color: white;
+	}
+	.restriçao{
+		background: blue;
+		color: white;
+		font-size: 2em;
+		height: 2em;
+		margin: 10px;
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+	}
+	.restriçao:hover{
+		background: red;
+		color: black;
+		font-size: 2em;
+		height: 2em;
+		margin: 10px;
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+
 	}
 </style>
