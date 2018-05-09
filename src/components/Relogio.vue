@@ -1,8 +1,11 @@
 <template>
 	<div id="Clockapplication">
-		<img class="chapeu" src="../assets/chapeu.png">
+		<!-- <img class="chapeu" src="../assets/chapeu.png"> -->
     	<h1 class="h-digital">{{aTime}}</h1>
-    	<p class="restriçao">(Esse relogio foi feito por um aluno do VainaWeb chamado Marco Gomez)</p>
+    	<div class="container-calendar">
+    		<h2 class="calendar">09 de maio de 2018</h2>
+    	</div>
+    	<p class="restriçao">(Essa óbra de arte feita por um aluno do VainaWeb chamado Marco Gomez)</p>
 	</div>
 </template>
 <script>
@@ -34,9 +37,13 @@
 }
 </script>
 <style scoped>
+*{
+	margin: 0;
+	padding: 0;
+}
 	#Clockapplication{
-		background-image: url(../assets/fundo2.jpg);
-		/*background-color: black;	*/
+		background-color: black;	
+		/*background-image: url(../assets/bomba.jpg);*/
 		min-height: 100vh;
 		display: flex;
 		justify-content: center;
@@ -44,54 +51,27 @@
 		flex-direction: column;
 	}
 	#Clockapplication:hover{
-		background-image: url(../assets/fundo.jpg);
-	}
-	.chapeu{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 11em;
-		height: 10em;
+		background: black;
 	}
 	.h-digital{
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 		width: 100vh;
 		height: 30vh;
 		font-size: 150px;
 		text-align: center;
-		border:solid;
-		border-color: blue;
 	}
-	.h-digital:hover{
-		border:solid;
-		border-color: red;
-		background-color: black;
+	.calendar{
+		background: black;
 		color: white;
+		/*border:solid;*/
+		/*border-width: 3px;*/
+		padding: 10px;
+		/*border-color: green;*/
+		/*border-radius: 50px;*/
 	}
 	.restriçao{
-		background: blue;
+		background-color: black;
 		color: white;
-		font-size: 2em;
-		height: 2em;
-		margin: 10px;
-		padding: 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50px;
-	}
-	.restriçao:hover{
-		background: red;
-		color: black;
-		font-size: 2em;
-		height: 2em;
-		margin: 10px;
-		padding: 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50px;
-
 	}
 </style>
